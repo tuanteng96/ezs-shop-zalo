@@ -5,6 +5,9 @@ import { createRoot } from "react-dom/client";
 // Import tailwind styles
 import "./css/tailwind.css";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "zmp-ui/zaui.css";
 
 import "./css/app.css";

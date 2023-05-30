@@ -1,0 +1,19 @@
+.page {
+  padding: calc(var(--zaui-safe-area-inset-top, 0px) + 44px) 0
+    calc(var(--zaui-safe-area-inset-bottom) + 48px) 0;
+}
+
+.page.no-toolbar {
+  padding: calc(var(--zaui-safe-area-inset-top, 0px) + 44px) 0 0 0;
+}
+
+.navbar {
+  height: calc(var(--zaui-safe-area-inset-top, 0px) + 48px);
+  padding-top: calc(var(--zaui-safe-area-inset-top, 0px));
+}
+
+.section-container {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 8px;
+}

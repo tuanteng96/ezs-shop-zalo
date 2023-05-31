@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon, Text } from "zmp-ui";
-import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Search = ({ scrollTop }) => {
   return (
@@ -17,26 +17,28 @@ const Search = ({ scrollTop }) => {
         <div className="w-10 text-center">
           <Icon className="text-[#a1a5b7]" icon="zi-search" />
         </div>
-        <Swiper
-          modules={[Pagination]}
-          pagination={{
-            clickable: true,
-          }}
-          autoplay
-          loop
-          cssMode
-        >
-          <SwiperSlide>
-            <Text className="text-[#ee4d2d]" size="small">
-              Bàn Pi A
-            </Text>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Text className="text-[#ee4d2d]" size="small">
-              Túi sách cho mẹ
-            </Text>
-          </SwiperSlide>
-        </Swiper>
+        <div className="h-full">
+          <Swiper
+            className="h-full"
+            direction="vertical"
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination, Navigation]}
+          >
+            <SwiperSlide className="flex items-center">
+              <Text className="text-[#ee4d2d]" size="small">
+                Bàn Pi A
+              </Text>
+            </SwiperSlide>
+            <SwiperSlide className="flex items-center">
+              <Text className="text-[#ee4d2d]" size="small">
+                Túi sách cho mẹ
+              </Text>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );

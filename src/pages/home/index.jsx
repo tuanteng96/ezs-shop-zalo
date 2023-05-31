@@ -12,13 +12,6 @@ const HomePage = () => {
   useEffect(() => {
     configAppView({
       headerTextColor: scrollTop > 0 ? "black" : "white",
-      success: (res) => {
-        // xử lý khi gọi api thành công
-      },
-      fail: (error) => {
-        // xử lý khi gọi api thất bại
-        console.log(error);
-      },
     });
   }, [scrollTop]);
 

@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+
+body {
+  background: #f5f5fa;
+}
+
 .page {
   padding: calc(var(--zaui-safe-area-inset-top, 0px) + 48px) 0
-    calc(var(--zaui-safe-area-inset-bottom) + 44px) 0;
+    calc(var(--zaui-safe-area-inset-bottom) + 48px) 0;
 }
 
 .page.no-toolbar {
-  padding: calc(var(--zaui-safe-area-inset-top, 0px) + 44px) 0 0 0;
+  padding: calc(var(--zaui-safe-area-inset-top, 0px) + 48px) 0 0 0;
 }
 
 .navbar {

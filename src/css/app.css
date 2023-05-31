@@ -30,7 +30,8 @@
   margin: 0;
   background: rgba(255, 255, 255, 0.6);
 }
-.swiper-pagination.swiper-pagination-horizontal > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination.swiper-pagination-horizontal
+  > .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #ffffff;
   transform: scale(1.5);
 }

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { List, Page, Icon, useNavigate, BottomNavigation, Box } from "zmp-ui";
-import { Profile } from "./components/Profile";
+import { Search } from "./components/search";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import clsx from "clsx";
 import { configAppView } from "zmp-sdk";
 
 const HomePage = () => {
@@ -21,17 +20,15 @@ const HomePage = () => {
         console.log(error);
       },
     });
-  }, [scrollTop])
+  }, [scrollTop]);
 
-  const handleScroll = event => {
+  const handleScroll = (event) => {
     setScrollTop(event.currentTarget.scrollTop);
   };
 
   return (
     <Page className="page !pt-0" hideScrollbar onScroll={handleScroll}>
-      <div className={clsx('navbar fixed top-0 left-0 min-w-[100vw] max-w-[100vw] z-[999] transition', scrollTop > 0 ? 'bg-white' : 'text-white')}>
-        <Profile scrollTop={scrollTop} />
-      </div>
+      <Search scrollTop={scrollTop} />
       <div>
         <Box className="bg-white" pb={4}>
           <Swiper
@@ -44,10 +41,13 @@ const HomePage = () => {
             cssMode
           >
             <SwiperSlide>
-              <img src="https://dermaclear.qodeinteractive.com/wp-content/uploads/2021/10/Main-home-img-3.jpg" />
+              <img src="https://cf.shopee.vn/file/vn-50009109-f18d5805608306b58f54c4023d072b95" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://dermaclear.qodeinteractive.com/wp-content/uploads/2021/10/bl-img15.jpg" />
+              <img src="https://cf.shopee.vn/file/vn-50009109-a39d31fcc8afb5e7b3244fd02a2a629d" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="https://cf.shopee.vn/file/vn-50009109-8a3c849737443859296e6ffdb15b3702" />
             </SwiperSlide>
           </Swiper>
         </Box>

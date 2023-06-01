@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        separator: "#f4f4f4",
         gray: "#767A7F",
         app: "#ee4d2d",
         muted: "#a1a5b7",

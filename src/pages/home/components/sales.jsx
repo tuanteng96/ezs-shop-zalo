@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Sales = () => {
   return (
-    <div className="my-1.5 px-3 py-3.5" style={{ backgroundImage: 'linear-gradient(to right, rgb(238, 108, 14), rgb(255, 198, 0))', backgroundSize: 'contain' }}>
+    <div className="my-2.5 px-3 py-3.5" style={{ backgroundImage: 'linear-gradient(to right, rgb(238, 108, 14), rgb(255, 198, 0))', backgroundSize: 'contain' }}>
       <div className="text-white mb-1.5"><span className="font-cherry uppercase text-2xl">Sale</span> <span className="font-semibold">hôm nay ?</span></div>
       <Box>
         <Swiper

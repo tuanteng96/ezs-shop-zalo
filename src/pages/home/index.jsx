@@ -7,6 +7,7 @@ import { Banner } from "./components/banner";
 import { Category } from "./components/category";
 import { Sales } from "./components/sales";
 import { Products } from "./components/products";
+import { ProductsNew } from "./components/productNew";
 
 const HomePage = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -31,6 +32,7 @@ const HomePage = () => {
         <img src="https://cf.shopee.vn/file/sg-50009109-cc368950f2bb0d57e2dd1404cdfc6928" />
       </div>
       <Sales />
+      <ProductsNew />
       <Products />
       <BottomNavigation fixed onChange={(key) => console.log(key)}>
         <BottomNavigation.Item
